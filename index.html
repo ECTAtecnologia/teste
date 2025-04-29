@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Provador Virtual de Perucas</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="https://cdn.jsdelivr.net/npm/face-api.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Provador Virtual de Perucas</h1>
+    </header>
+    
+    <main>
+        <div class="container">
+            <div class="video-container">
+                <video id="video" autoplay muted></video>
+                <canvas id="overlay"></canvas>
+                <div id="loading">Carregando modelos de detecção facial...</div>
+            </div>
+            
+            <div class="controls">
+                <button id="capture-btn">Tirar Foto</button>
+                <button id="share-btn">Compartilhar</button>
+            </div>
+            
+            <div class="catalog">
+                <h2>Escolha uma Peruca</h2>
+                <div class="catalog-items">
+                    <div class="catalog-item" data-hair="peruca1">
+                        <img src="assets/peruca1-thumb.png" alt="Peruca 1">
+                        <p>Peruca Longa Lisa</p>
+                    </div>
+                    <div class="catalog-item" data-hair="peruca2">
+                        <img src="assets/peruca2-thumb.png" alt="Peruca 2">
+                        <p>Peruca Curta Cacheada</p>
+                    </div>
+                    <div class="catalog-item" data-hair="peruca3">
+                        <img src="assets/peruca3-thumb.png" alt="Peruca 3">
+                        <p>Peruca Média Ondulada</p>
+                    </div>
+                    <div class="catalog-item" data-hair="peruca4">
+                        <img src="assets/peruca4-thumb.png" alt="Peruca 4">
+                        <p>Aplique Longo</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="result-container" style="display: none;">
+                <h2>Sua Foto</h2>
+                <canvas id="result-canvas"></canvas>
+                <div class="result-controls">
+                    <button id="back-btn">Voltar</button>
+                    <button id="download-btn">Baixar</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <p>&copy; 2023 Provador Virtual de Perucas</p>
+    </footer>
+    
+    <script src="scripts/main.js"></script>
+</body>
+</html> 

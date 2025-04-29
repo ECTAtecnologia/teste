@@ -1,0 +1,49 @@
+# Projeto: Provador Virtual de Perucas e Apliques
+
+## Visão Geral
+Um aplicativo web que permite aos usuários experimentar diferentes estilos de perucas e apliques virtualmente através da câmera do dispositivo.
+
+## Tecnologias Principais
+- HTML5, CSS3, JavaScript
+- WebRTC (para acesso à câmera)
+- TensorFlow.js ou face-api.js (para detecção facial)
+- Three.js ou biblioteca similar (para renderização 3D dos cabelos)
+
+## Funcionalidades Principais
+1. Captura de vídeo em tempo real
+2. Detecção de rosto e pontos faciais
+3. Catálogo de perucas e apliques
+4. Sobreposição virtual dos produtos no vídeo
+5. Captura de imagem do resultado
+6. Compartilhamento em redes sociais
+
+## Estrutura de Arquivos
+- index.html (página principal)
+- styles/ (diretório de estilos CSS)
+- scripts/ (diretório de scripts JavaScript)
+- assets/ (diretório de imagens e modelos 3D)
+- models/ (modelos de IA para detecção facial)
+
+## Fluxo do Usuário
+1. Usuário acessa o site
+2. Concede permissão para uso da câmera
+3. O sistema detecta o rosto do usuário
+4. Usuário navega pelo catálogo de perucas/apliques
+5. Ao selecionar um produto, ele é sobreposto virtualmente no vídeo
+6. Usuário pode tirar uma foto do resultado
+7. Opção de compartilhar ou salvar a imagem
+
+## Desafios Técnicos
+- Detecção precisa dos pontos faciais
+- Renderização realista das perucas
+- Ajuste automático das perucas conforme o formato do rosto
+- Otimização para dispositivos móveis
+- Compatibilidade com diferentes navegadores
+
+## Próximos Passos
+1. Criar protótipo básico com acesso à câmera
+2. Implementar detecção facial
+3. Desenvolver catálogo de produtos
+4. Implementar sobreposição virtual
+5. Adicionar funcionalidades de captura e compartilhamento
+6. Testes e otimização
